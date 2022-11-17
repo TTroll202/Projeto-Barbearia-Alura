@@ -1,0 +1,205 @@
+body {font-family: 'montserrat', sans-serif;}
+header{background-color: #BBBBBB;
+    padding: 20px 0;}
+.caixa{position: relative;
+    width: 940px;
+    margin: 0 auto;}
+nav {position:absolute;
+    top: 110px; right:0 ;}
+nav li {display: inline;
+    margin: 0 0 0 15px;}
+nav a {
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration:none;}
+nav a:hover {
+    color: red;
+    text-decoration: underline;}
+   
+    .produtos {
+        width: 940px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    
+    .produtos li {
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 10px 40px 10px 40px;
+    }
+    
+    .produtos li:hover {
+        border-color: red;
+    }
+    
+    .produtos li:active {
+        border-color: green;	
+    }
+    
+    
+    .produtos li:hover h2{
+        font-size: 32px;
+    }
+    
+    .produtos h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .produto-descricao {
+        font-size: 18px;
+    }
+    
+    .produto-preco {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;}
+.Copy{
+    color:white;
+    font-size: 13px;
+    margin-top: 20px;}
+/*margin: 0 auto;*/
+
+form {
+    margin: 40px 0;}
+form label, form legend {
+    display: block;
+    font: 20PX;
+    margin: 10px;}
+.input-padrao, form textarea{
+    display: block;
+    margin: 10px;
+    padding: 10px 25px;
+    width: 50%;}
+.checkbox{ padding: 10px 0;}
+.Enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: rgba(255, 0, 0, 0.521);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 2s all;
+    cursor: pointer;}
+.Enviar:hover {
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.2);}
+table {margin: 20px 0 40px;}
+tbody{margin: 10px;}
+thead{  
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+td,th{border: 1px solid rgb(0, 0, 0);
+    padding: 8px 15px;
+    margin: 50px;
+}
+.main-contatos{margin: 15px;}
+
+
+
+/*CSS da pagina Inicial*/
+.banner{width: 100%;}
+.Titulo-Principal{
+    text-align: center;
+    font-size:2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgb(0, 0, 0);
+    text-shadow: -15px 5px 20px rgb(0, 0, 0);}
+.Principal{
+    padding: 3em 0;
+    background-color: #fefefe;
+    width: 940px;
+    margin: 0 auto;}
+.Principal p {margin: 0 0 1em;}
+.Principal strong {font-weight: bold;}
+.Principal em {font-style: italic;}
+.utensilios{
+    width: 120px;
+    float:left;
+    margin: 0 20px 20px 0;}
+/*MAPA*/
+.Mapa{padding: 3em 0;
+    background:linear-gradient(#fefefe,#888888);}
+.Mapa-Conteudo{width: 940px;
+    margin: 0 auto;}
+.Mapa p{margin: 0 0 2em;
+    text-align: center;}
+/*Beneficios*/
+.Benef{padding: 3em 0;
+    background-color: #888888;}
+.Conteudo-Beneficios{width: 640px;
+    margin: 0 auto;}
+.Lista-Benficios
+    {width: 40%;
+    display: inline-block;
+    vertical-align: top;}
+.Itens{line-height: 1.5;}
+.Itens:first-child{font-weight: bold;}
+.Itens::before{content: "★";}
+.Imagem-Beneficios{width: 60%;
+opacity: 1;
+box-shadow: 10px 10px 20px 10px rgb(0, 0, 0) ;}
+.Imagem-Beneficios:hover {width: 60%;
+opacity: 0.4;
+transition: 0.5s;
+box-shadow: 0px 0px rgb(0, 0, 0);}
+/*VIDEO*/
+    .video{width: 560px; ;
+    margin: 2em auto;}
+/*Adaptação Mobile*/
+@media screen and (max-width: 480px) {
+	.caixa, .Principal, .Conteudo-Beneficios, .Mapa-Conteudo{
+		width: auto;
+	}
+    .video {
+    width: 90%;
+    margin:10px;}
+	h1 {
+		text-align: center;
+	}
+    .produtos{
+     width: auto;
+     display: block;
+     padding: 1%;
+    }
+    .produtos li  {
+        margin: 0;
+        width: 32%;
+        height: 330px;
+        padding: 25px 5px 0 0;
+    }
+
+    .produto-descricao{font-size: 12px;
+   }
+    .produto-preco {color: #000000 ;
+    position: 10p;}
+    img{
+        max-width:100px;
+    }
+	nav{
+	position: static;
+	}
+	.Lista-Benficios, .Imagem-Beneficios {
+	width: 90%;
+    margin:0 10px 0 10px;
+	}
+}
